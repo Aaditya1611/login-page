@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(/login-page/res/IMG_20240713_210125_249.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.parent-grid {
+    text-align: center;
+    width: 400px;
+    border: 1 px solid rgba(20, 102, 57, 0.63);
+    padding: 30px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8);
+    color: #fff;
+    border-radius: 5px;
+    border-color: rgb(97, 117, 108);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.login {
+    font-weight: bold(600);
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    border-bottom: 2px solid white;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.input-field input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1rem;
+   
+    transition: 0.3s ease;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label{
+    transform: translateY(-200%);
+    font-size: 0.8rem;
+    color: rgba(146, 175, 165, 0.753);
+}
+
+.password-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: #fff;
+
+}
+
+#remember{
+    accent-color: #fff;
+}
+
+.password-options label{
+    display: flex;
+    align-items: center;
+
+}
+
+.password-options label p{
+    margin-left: 8px;
+}
+
+.parent-grid a{
+    color: #efefef;
+    text-decoration: none;
+}
+
+.parent-grid a:hover{
+    text-decoration: underline;
+}
+button{
+    background: #fff;
+    color:#000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+button:hover{
+    background: rgba(36, 185, 136, 0.753);
+    color: #fff;
+    
+}
+
+.account-otpions{
+    text-align: center;
+    margin-top: 20px;
+
+}
